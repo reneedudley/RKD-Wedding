@@ -1,6 +1,7 @@
 <!DOCTYPE html>
  <html lang="en">
   <head>
+
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
      <title>Becca and Austin</title>
@@ -10,12 +11,13 @@
      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-     <!-- Favicon -->
-<!--      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/> -->
+     <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
+     <?php include('contact.php'); ?>
+
   </head>
   <body>
    <div class='col s12 m4 l3' id="arrow">
-    <img class="responsive-img" src="arrow.jpg" >
+    <img class="responsive-img" src="pinecone.jpg" >
    </div>
    <div class="parallax-container valign-wrapper col s12 m8 l9 center" id="head">
    <div class="parallax"><img src="header.JPG" ></div>
@@ -30,7 +32,6 @@
    <div class="section no-pad-bot">
     <div class="container">
      <div class="row center">
-      <!-- <h3 class="mission"> stunning websites that convert visitors into customers</h3> -->
      </div>
     </div>
    </div>
@@ -39,35 +40,116 @@
   <div class="parallax-container valign-wrapper">
    <div class="section" >
     <div class ="row" >
- 	 <div class='col s12 center' >
- 	  <h3 class="mission"> stunning websites that convert visitors into customers</h3>
+ 	   <div class='col s12 center' >
+      <div class="gallery js-flickity">
+       <div class="gallery-cell">
+        <img src="slider1.jpg" alt="orange tree" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider2.jpg" alt="submerged" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider3.jpg" alt="look-out" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider4.jpg" alt="One World Trade" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider5.jpg" alt="drizzle" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider6.jpg" alt="cat nose" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider7.jpg" alt="contrail" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider8.jpg" alt="golden hour" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider9.jpg" alt="flight formation" />
+       </div>
+       <div class="gallery-cell">
+        <img src="slider10.jpg" alt="flight formation" />
+       </div>
+      </div>
+	  </div>
 	 </div>
-	</div>
-   </div>
   </div>
-  <div class="container" >
+ </div>
+  <div class="container " >
    <div class="section">
     <div class="row" >
-     <div class="col s12">
-      <h3 class="mission center">relatable digital products</h3>
+     <div class="col s12 center">
+      <a href="https://www.myregistry.com/public/beccaaustinraleigh">
+      <img src="registry.jpg" class="responsive-img"> </a>
      </div>
     </div>
     <br>
     <div class="row">
-     <div class="col s12 m4" >
-      <div class="icon-block" id="desc">
-       <p>Our goal is to make it as simple as possible for someone to find out about your business and become a loyal {repeat} customer. This is where their journey starts. </p>
+     <div class="col s12">
+        <div class="row">
+         <form class="col s12">
+          <div class="row">
+           <div class="input-field col s6">
+            <input id="first_name" name="first" type="text" class="validate">
+             <label for="first_name">First Name</label>
+           </div>
+        <div class="input-field col s6">
+          <input id="last_name" name="last" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
       </div>
-     </div>
-     <div class="col s12 m4 " >
-      <div class="icon-block" id="desc">
-       <p>There are thousands of options for your customers. We want to create a site that immediatley sets you apart from the competition and appeals to exactly what your ideal customer wants.</p>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="phone" name="phone" type="text" class="validate">
+          <label for="phone">Phone Number</label>
+        </div>
       </div>
-     </div>
-     <div class="col s12 m4">
-      <div class="icon-block" id="desc">
-       <p>People hate being "sold" by a faceless company with vague information. Humans want to connect with your product and your company. We're going to cut through the bullshit, show off your product, and highlight the values that makes you one of a kind.</p>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password On Your Invite</label>
+        </div>
       </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+
+          <p>
+           <input name="Yes!" type="radio" id="test1" />
+            <label for="test1">Gladly Attend</label>
+          </p>
+          <p>
+           <input name="No" type="radio" id="test2" />
+            <label for="test2">Regretfully Decline</label>
+          </p>
+          <p>
+           <input class="with-gap" name="No2" type="radio" id="test3"  />
+            <label for="test3">Regretfully Attend</label>
+          </p>
+          <p>
+           <input name="No!" type="radio" id="test4" />
+            <label for="test4">Enthusiatically Decline</label>
+           </p>
+          <p>
+           <input name="Yes2" type="radio" id="test4" />
+           <label for="test5">Will Decline To Respond But Ulitmatley Attend</label>
+          </p>
+
+
+           <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+            </button>
+        </div>
+      </div>
+    </form>
+  </div>
      </div>
     </div>
    </div>
@@ -230,10 +312,13 @@
 
   <!--  Scripts-->
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+<script type="text/javascript" src="./js/init.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="./js/materialize.js"></script>
-  <script src="./js/init.js"></script>
+<script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
+
+
 
 </body>
 </html>

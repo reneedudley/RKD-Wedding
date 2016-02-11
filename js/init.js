@@ -16,4 +16,6 @@ $(function(){
     ];
     Materialize.scrollFire(options);
 
+$('.slider').slider();
+
 }); // end of document ready// end of jQuery name space
