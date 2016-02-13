@@ -13,7 +13,7 @@
      <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
      <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
      <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
-     <?php include('contact.php'); ?>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
   </head>
   <body>
@@ -21,7 +21,7 @@
     <img class="responsive-img" src="pinecone.jpg" >
    </div>
    <div class="parallax-container valign-wrapper col s12 m8 l9 center" id="head">
-   <div class="parallax"><img src="header.JPG" ></div>
+   <div class="parallax"><img src="header.jpg" ></div>
    <div class="section">
     <div class ="row">
      <div>
@@ -36,13 +36,13 @@
      </div>
     </div>
    </div>
-   <div class="parallax"><img src="wall.jpg" alt="Unsplashed background " class="responsive-img"></div>
+   <div class="parallax" id="wall"><img src="wall2.jpg" alt="Unsplashed background " class="responsive-img"></div>
   </div>
   <div class="parallax-container valign-wrapper">
    <div class="section" >
     <div class ="row" >
  	   <div class='col s12 center' >
-      <div class="gallery js-flickity">
+      <div class="gallery js-flickity" id="gall">
        <div class="gallery-cell">
         <img src="slider1.jpg" alt="orange tree" />
        </div>
@@ -73,6 +73,9 @@
        <div class="gallery-cell">
         <img src="slider10.jpg" alt="flight formation" />
        </div>
+       <div class="gallery-cell">
+        <img src="slider11.jpg" alt="flight formation" />
+       </div>
       </div>
 	  </div>
 	 </div>
@@ -81,8 +84,8 @@
   <div class="container " >
    <div class="section">
     <div class="row" >
-     <div class="col s12 center">
-      <a href="https://www.myregistry.com/public/beccaaustinraleigh">
+     <div class="col s12 center" id="reg">
+      <a href="https://www.myregistry.com/public/beccaaustinraleigh" target= "_blank">
       <img src="registry.jpg" class="responsive-img"> </a>
      </div>
     </div>
@@ -95,7 +98,7 @@
      </div>
     </div>
    </div>
-   <div class="parallax"><img src="ring.jpg" alt="Unsplashed background " class="responsive-img"></div>
+   <div class="parallax" id="car"><img src="car.jpg" alt="Unsplashed background " class="responsive-img"></div>
   </div>
   <div class="container " >
    <div class="section">
@@ -106,7 +109,7 @@
        <div class="row">
          <div class="input-field col s12 center-align">
           <input id="password" type="text" class="validate">
-          <label for="password">Password On Your Invite</label>
+          <label for="password">Click Here To Type The Password On Your Invite</label>
          </div>
        </div>
       </form>
@@ -122,27 +125,21 @@
      <img src="fest.jpg" class="responsive-img">
     </div>
    </div>
-   <br>
-   <div class="row" >
-    <div class="col s12">
-     <h4 class="mission center" ></h4>
-    </div>
-   </div>
    <div class="row" >
     <div class="col s12" id="mem">
           <ul id="staggered-test" class=" center">
       <li id="stag">
         <h5>Ceremony</h5>
-        <p id="text1">We'll be tying the knot on October 22nd, at Fletcher Park in Raligh North Carolina under the Carolina blue sky at 3pm. </p>
+        <p id="text1">We're tying the knot on <span id="bold"> October 22, 2016, at 3:00 p.m.</span>  in Fletcher Park, Raleigh, NC.  </p>
       </li>
       <li id="stag">
         <h5>Reception</h5>
-        <p id="text1 ">Come party with us! We'll have a reception to follow the ceremony with delicious food and drinks. The reception will take place at the Borden Building, adjacent to the ceremony space.</p>
+        <p id="text1 ">Come party with us! Our reception will take place at Borden Building, right next to the ceremony. We promise food, drinks, dancing, and lots of fun!</p>
       </li>
-      <!-- <li id="stag">
-        <h5 >Accomodations</h5>
-        <p id="text1">These hotels are close to the venue and have open availability</p>
-      </li> -->
+      <li id="stag">
+        <h5 >Travel and Accomodations</h5>
+        <p id="text1">Coming soon!</p>
+      </li>
      </ul>
     </div>
    </div>
@@ -157,7 +154,7 @@
     </div>
     <div class="row" >
      <div class="col s12">
-      <p id="mem" class="center">Capture memories at any point during the festivities and post them to Instagram using #austinandbecca or #lovingthejoneses. We can't wait to celebrate with you! Love Austin and Becca</p>
+      <p id="mem" class="center">Share memories with us at any point and post them to Twitter, Instagram or Facebook using #beccaandaustin or #jonesingforawedding. We can't wait to celebrate with you! Love, Becca and Austin.</p>
      </div>
     </div>
    </div>

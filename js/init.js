@@ -18,7 +18,7 @@ $(function(){
 
 $('.slider').slider();
 $('form').submit(function () {
-    if ($('input').val() === "#austinandbecca") {
+    if ($('input').val() === "#beccaandaustin") {
        $("#rsvp").append('<iframe src="https://docs.google.com/forms/d/1TTF0UEb9Z8BoIEvTXlEuGDf4so8jWJtvJIrsWzygSeE/viewform?embedded=true" width="500" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>')
     };
     $('input').val('');
