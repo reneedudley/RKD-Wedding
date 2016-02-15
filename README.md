@@ -1,4 +1,4 @@
 # RKD-Wedding
-Sisters Wedding Page 
+My Sister's Wedding Page 
 
 Hosted live http://www.beccaandaustin.com/
